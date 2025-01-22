@@ -1,9 +1,9 @@
 package aritmetica;
 
 public class Aritmetica {
-    //Atributos de clase
-    int operando1;
-    int operando2;
+    //Atributos de clase encapsulamiento
+    private int operando1;
+    private int operando2;
 
     //Constructor vacio permite que no sea necesario agregar valores obligatorios
     //Tambien llamado sobrecarga cuando hay mas de 1 constructor
@@ -35,4 +35,22 @@ public class Aritmetica {
         System.out.println("Resultado divicion = " + resultado);
     }
 
+
+
+    ///METODO DE ENCAPSULAMIENTO GET Y SET
+    public int getOperando1(){
+        return this.operando1;
+    }
+
+    public int getOperando2(){
+        return this.operando2;
+    }
+
+    public void setOperando1(int operando1){
+        this.operando1 = operando1;
+    }
+
+    public void setOperando2(int operando2){
+        this.operando2 = operando2;
+    }
 }
