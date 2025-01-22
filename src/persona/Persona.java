@@ -30,7 +30,7 @@ public class Persona {
         System.out.println("Numero Celular: " + this.tel);
     }
 
-    //AGREGAR METODOS GET Y SET PARA EL METODO ENCAPSULAMIENTO
+    //AGREGAR METODOS GET Y SET PARA EL METODO ENCAPSULAMIENTO A ATRIBUTOS
     public String getNombre() {
         return nombre;
     }
