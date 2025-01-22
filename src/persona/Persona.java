@@ -8,10 +8,6 @@ public class Persona {
     private String email;
     private String tel;
 
-    //Agregar constructor vacio
-    public Persona(){
-
-    }
 
     //Agregar constructor publico con 4 argumentos, (nombre, apellido, email, tel)
     //Uso del operador this
