@@ -17,7 +17,7 @@ class Perro extends  Animal{
         System.out.println("Ladrando...");
     }
 
-    @Override//Anotacion de sobreescritura de la clase animal en Perro
+    @Override//Anotacion de sobreescritura al metodo de la clase animal en Perro
     protected  void dormir(){
         System.out.println("Duermo 15 horas al dia...");
 
