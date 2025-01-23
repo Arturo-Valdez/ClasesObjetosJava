@@ -16,6 +16,11 @@ class Perro extends  Animal{
     public void hacerSonido(){
         System.out.println("Ladrando...");
     }
+
+    @Override//Anotacion de sobreescritura de la clase animal en Perro
+    protected  void dormir(){
+        System.out.println("Duermo 15 horas al dia...");
+    }
 }
 class PrebaAnimal{
     public static void main(String[] args) {
@@ -29,7 +34,7 @@ class PrebaAnimal{
 
         System.out.println("\nClase Hija, soy un Perro");
         var perro1 = new Perro();
-        perro1.dormir();
+        perro1.dormir();//Sobreescrito
         perro1.comer();
         perro1.hacerSonido();
 
