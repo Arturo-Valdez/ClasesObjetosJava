@@ -20,6 +20,10 @@ class Perro extends  Animal{
     @Override//Anotacion de sobreescritura de la clase animal en Perro
     protected  void dormir(){
         System.out.println("Duermo 15 horas al dia...");
+
+        //Acceder al metodo Padre Animal utilizando 'super' y asi accediendo a el
+        System.out.println("Metodo de la clase Padre: ");
+        super.dormir();
     }
 }
 class PrebaAnimal{
