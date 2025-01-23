@@ -1,7 +1,7 @@
 package persona;
 
 //Clase persona
-public class Persona {
+public class Persona{
     //Encapsulamiento de atributos
     private String nombre;
     private String apellido;
@@ -9,14 +9,20 @@ public class Persona {
     private String tel;
 
 
+    @Override//Sobreescritura
+    public String toString(){
+        return "Nombre: " + this.nombre + "\tApellido: " + this.apellido + "\tEmail: " +
+                this.email + "\tTel: " + this.tel + "\tDireccion de memoria: "+super.toString();
+    }
+
     //Agregar constructor publico con 4 argumentos, (nombre, apellido, email, tel)
     //Uso del operador this
-    public Persona(String nombre, String apellido, String email, String tel){
+   /* public Persona(String nombre, String apellido, String email, String tel){
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.tel = tel;
-    }
+    }*/
 
     //Mostrar persona
     public void mostrarPersona(){
