@@ -3,6 +3,7 @@ package persona;
 //Clase persona
 public class Persona{
     //Encapsulamiento de atributos
+    static int contadorPersonas = 0;
     private String nombre;
     private String apellido;
     private String email;
@@ -17,12 +18,13 @@ public class Persona{
 
     //Agregar constructor publico con 4 argumentos, (nombre, apellido, email, tel)
     //Uso del operador this
-   /* public Persona(String nombre, String apellido, String email, String tel){
+    public Persona(String nombre, String apellido, String email, String tel){
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.tel = tel;
-    }*/
+        Persona.contadorPersonas++;
+    }
 
     //Mostrar persona
     public void mostrarPersona(){
