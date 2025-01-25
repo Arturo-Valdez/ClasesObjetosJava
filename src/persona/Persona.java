@@ -3,17 +3,18 @@ package persona;
 //Clase persona
 public class Persona{
     //Encapsulamiento de atributos
-    static int contadorPersonas = 0;
+    private int idPersona;
     private String nombre;
     private String apellido;
     private String email;
     private String tel;
+    static int contadorPersonas = 0;
 
 
     @Override//Sobreescritura
     public String toString(){
-        return "Nombre: " + this.nombre + "\tApellido: " + this.apellido + "\tEmail: " +
-                this.email + "\tTel: " + this.tel + "\tDireccion de memoria: "+super.toString();
+        return "ID: " + this.idPersona +"\tNombre: " + this.nombre + "\tApellido: " + this.apellido + "\tEmail: " +
+                this.email + "\tTel: " + this.tel + "\tDireccion de memoria: " + super.toString();
     }
 
     //Agregar constructor publico con 4 argumentos, (nombre, apellido, email, tel)
@@ -23,7 +24,7 @@ public class Persona{
         this.apellido = apellido;
         this.email = email;
         this.tel = tel;
-        Persona.contadorPersonas++;
+        this.idPersona = ++Persona.contadorPersonas;
     }
 
     //Mostrar persona
@@ -41,6 +42,14 @@ public class Persona{
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public int getIdPersona() {
+        return idPersona;
+    }
+
+    public void setIdPersona(int idPersona) {
+        this.idPersona = idPersona;
     }
 
     public String getApellido() {
