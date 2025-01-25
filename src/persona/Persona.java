@@ -8,7 +8,7 @@ public class Persona{
     private String apellido;
     private String email;
     private String tel;
-    static int contadorPersonas = 0;
+    private static int contadorPersonas = 0;
 
 
     @Override//Sobreescritura
@@ -76,5 +76,9 @@ public class Persona{
         this.tel = tel;
     }
 
+
+    public static int getContadorPersonas(){
+        return Persona.contadorPersonas;
+    }
 }
 

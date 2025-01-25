@@ -8,7 +8,7 @@ public class PruebaPersona {
         System.out.println("*** Creacion de Clase y objetos tipo persona.Persona ***");
 
         //Impresion de ID
-        System.out.println("Variable estaica: " + Persona.contadorPersonas);
+        System.out.println("Variable estaica: " + Persona.getContadorPersonas());
         var objeto1 = new Persona("Karen", "Contreras","kco@gmail.com","41254477889");
 
         //USO DEL SET
@@ -20,14 +20,14 @@ public class PruebaPersona {
         System.out.println(objeto1);//Se manda a llamar automaticamente metodo toString
 
         //Impresion de ID
-        System.out.println("Variable estaica: " + Persona.contadorPersonas);
+        System.out.println("Variable estaica: " + Persona.getContadorPersonas());
 
         //Segundo objeto persona
         var objeto2 = new Persona("Santiago","Valdez","santi@gmail.com","313 1122 4456");
         System.out.println(objeto2);//Se manda a llamar automaticamente metodo toString
 
         //Impresion de ID
-        System.out.println("Variable estaica: " + Persona.contadorPersonas);
+        System.out.println("Variable estaica: " + Persona.getContadorPersonas());
 
         //USO DE GET
         //System.out.println(objeto1.getNombre());
